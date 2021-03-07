@@ -724,6 +724,7 @@ details>summary::-webkit-details-marker {
 .vypujcka-item {
   padding: 20px 0px;
   border-top: var(--lightBorder);
+  overflow: hidden;
 }
 
 .vypujcka-item:last-of-type {
@@ -745,7 +746,9 @@ details>summary::-webkit-details-marker {
 }
 
 .detail-vypujcky-container {
-  display: none;
+  display: block;
+  transition: .3s;
+  height: 0px;
 }
 .detail-vypujcky-container.detail-vypujcky-container-checked {
   display: block;
